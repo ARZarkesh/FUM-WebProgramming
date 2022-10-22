@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    fieldset {
+      width: 50%;
+      background-color: rgb(237, 237, 119);
+      border-radius: 8px;
+    }
+    legend {
+      background-color: rgb(147, 18, 18);
+      padding: 6px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form style="display: flex;">
+    <fieldset>
+      <legend>Customer Info</legend>
+      <table>
+        <tr>
+          <td><label for="name">Name*</label></td>
+          <td><input type="text" id="name" placeholder="first and last name" required></td>
+        </tr>
+        <tr>
+          <td><label for="address">Street address</label></td>
+          <td><input type="text" id="address"></td>
+        </tr>
+        <tr>
+          <td><label for="city">City</label></td>
+          <td><input type="text" id="city" value="Mashhad"></td>
+        </tr>
+        <tr>
+          <td><label for="state">State</label></td>
+          <td><input type="text" id="state" value="Iran"></td>
+        </tr>
+        <tr>
+          <td><label for="postalcode">Postal Code</label></td>
+          <td><input type="text" id="postalcode" placeholder="some thing"></td>
+        </tr>
+        <tr>
+          <td><label for="about">Where did you hear about us?</label></td>
+          <td>
+            <select id="about" size="3" multiple style="width: 100%;">
+              <option value="Internet">Internet</option>
+              <option value="Magazine">Magazine</option>
+              <option value="Friends">Friends</option>
+              <option value="Lorem">Lorem</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="addme">
+            <label for="addme">Add me to your mailing list.</label>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Share your experience</legend>
+      <table>
+        <tr>
+          <td><label for="date">Date of visit</label></td>
+          <td><input type="date" id="date" style="width: 100%"></td>
+        </tr>
+        <tr>
+          <td><label for="ordertype">Order type</label></td>
+          <td>
+            <select id="ordertype" style="width: 100%">
+              <option value="Test1">Test1</option>
+              <option value="Test2">Test2</option>
+              <option value="Test3">Test3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Was your service friendly?</label></td>
+          <td style="border: 1px solid black;">
+            <label for="yes">Yes</label>
+            <input type="radio" name="survey" id="yes">
+            <label for="no">No</label>
+            <input type="radio" name="survey" id="no">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><label for="tellme">Tell me more about your experience!</label></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea name="tellme" id="tellme" style="width: 100%;" rows="10"></textarea>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
