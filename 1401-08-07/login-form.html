@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      background-image: url("bg.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .container {
+      background-color: #00000099;
+      border-radius: 16px;
+      box-shadow: 0 0 10px #000;
+      margin: auto;
+      margin-top: 10%;
+      color: white;
+      width: 400px;
+      padding: 60px 20px;
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .input {
+      border: none;
+      background-color: white;
+      color: black;
+      padding: 12px 8px;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .button {
+      background-color: rgb(81, 103, 214);
+      color: white;
+      margin-top: 40px;
+    }
+
+    a {
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <form class="container">
+    <h2 style="font-style: bold;">Login Form</h2>
+    <input class="input" type="email" name="email" placeholder="Your email address">
+    <input class="input" name="password" type="password" placeholder="Your password">
+    <input type="checkbox" name="check" id="check" style="margin-top: 10px;">
+    <label style="margin-top: 10px;" for="check">Agree with <a href="">Terms and Conditions</a></label>
+    <input class="input button" type="submit" value="login">
+  </form>
+</body>
+</html>
